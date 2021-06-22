@@ -1,0 +1,42 @@
+* {
+    /* outline: 1px solid red; */
+    margin: 0px;
+}
+
+body {
+    margin: 10px;
+}
+
+.cyan {
+    color: cyan;
+}
+
+h1, h2, h3 {
+    padding: 5px 20px;
+}
+
+h1 {
+    background-color: black;
+    color: white;
+    font-family: cursive;
+}
+
+h2 {
+    background-color: rebeccapurple;
+    color: white;
+    text-align: center;
+    font-style: italic;
+    font-family: monospace;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+h3 {
+    background-color: skyblue;
+    text-align: right;
+    font-family: cursive;
+}
+
+h3 a {
+    color:darkslateblue;
+}
