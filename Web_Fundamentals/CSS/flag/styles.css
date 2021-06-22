@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+#container {
+    height: 975px;
+    width: 1625px;
+    clear: both;
+}
+.stripe {
+    height: 75px;
+    border-right: 1px solid black;
+}
+
+.red {
+    background-color: firebrick;
+}
+
+.white {
+    background-color: white;
+}
+
+#blue {
+    width: 640px;
+    height: 525px;
+    float: left;
+    background-color: midnightblue;
+    text-align: center;
+}
+
+.stars {
+    color: white;
+    font-size: 3em;
+}
+
+.stars2 {
+    color: white;
+    font-size: 3em;
+}
