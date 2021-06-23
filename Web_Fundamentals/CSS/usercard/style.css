@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    padding: 68px 15%;
+    font-family: cursive;
+}
+#container {
+    
+}
+#userCircle {
+    display: block;
+    height: 129px;
+    border: 5px solid silver;
+    border-radius: 50%;
+    padding: 5px;
+    background-color: white;
+    position: absolute;
+    top: -85px;
+}
+#gear, #marker {
+    height: 26px;
+}
+
+#profileStripe {
+    height: 130px;
+    background-color: crimson;
+    
+}
+#profileContent {
+    position: relative;
+    border: 5px solid silver;
+    padding: 38px;
+}
+
+#profileContent h1 {
+    margin: 32px 0 12px;
+}
+#profileContent h2 {
+    margin-bottom: 10px;
+}
+#marker, #gear {
+    margin-right: 12px;
+}
+#profileContent p, #edit {
+    font-weight: bold;
+    font-size: 1.4em;
+}
+#edit {
+    margin-top: 14px;
+}
+
+a {
+    color: royalblue;
+}
