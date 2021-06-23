@@ -1,0 +1,34 @@
+body {
+    background-color: #121212;
+    color: white;
+    font-family: sans-serif;
+}
+.pink {
+    background: plum;
+}
+.blue {
+    background: skyblue;
+}
+.container {
+    margin: 0px auto;
+    padding: 0 25px;
+    background: linear-gradient(0deg,hsla(0,0%,100%,.1),hsla(0,0%,100%,.1)),#121212;
+    width: 750px;
+}
+img.octocat {
+    height: 200px;
+    margin-right: 50px;
+}
+img.last {
+    margin-right: 0px;
+}
+.row {
+    /* border: 1px solid black; */
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.row p, .row h1 {
+    margin: 0;
+}
