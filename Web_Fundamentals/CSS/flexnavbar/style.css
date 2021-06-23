@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body, a, .btn {
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+    text-decoration: none;
+}
+
+.nav {
+    background-color: gray;
+    display: flex;
+    justify-content: space-between;
+    padding: 24px 36px;
+}
+
+ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style-type: none;
+}
+
+li {
+    /* border: 1px solid red; */
+    display: block;
+    margin-left: 40px;
+    font-size: 1.4em;
+}
+
+.btn {
+    border: 3px solid black;
+    box-shadow: 5px 5px black;
+    padding: 2px 14px;
+    background-color: dodgerblue;
+    font-size: 1em;
+}
