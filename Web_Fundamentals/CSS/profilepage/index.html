@@ -12,136 +12,126 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 </head>
 <body class="flex-25 col">
-    <header>
-        <nav class="flex">
-            <div class="flex-25 whiteText" id="navTitle">
-                <p>Profile</p>
-                <ul class="flex-20" id="navLinks">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#" class="active whiteText">My Profile</a></li>
-                    <li><a href="#">Find Connections</a></li>
-                </ul>
-            </div>
-            <button class="btn whiteText">Sign Out</button>
-        </nav>
-    </header>
-    <div id="outerContainer">
-        <div class="flex-25" id="innerContainer">
-            <main class="flex-25 col">
-                <div id="profileIntro">
-                    
-                    <div id="profileStripe"></div>
-                    <div class="grayBorder" id="profileContent">
-                        
-                        <img src="images/jane-m.jpg" alt="Picture of Jane Doe" id="userCircle">
-                        <h1>Jane Doe</h1>
-                        
-                        <div class="flex-5" id="location">
-                            <img src="icons/map-marker.png" alt="map marker" id="marker">
-                            <p>Seattle</p>
-                        </div>
-                        
-                        <p id="profileDescription">Developer | Engineer | Problem Solver<br>Master of shadows and the Internet!</p>
-                        
-                        <div class="flex-5" id="edit">
-                            <img src="icons/gear.png" alt="gear icon" id="gear">
-                            <p><a href="#">edit profile</a></p>
-                        </div>
-                        
-                    </div>
-                    
-                </div>
-                <div id="education">
-                    
-                    <div class="flex-10 whiteText" id="educationStripe">
-                        <h2>Education</h2>
-                    </div>
-                    
-                    <div class="grayBorder" id="educationContent">
-                        <h3>Coding Dojo - Full Stack Bootcamp</h3>
-                        <p id="eduDate">Dec 2019 - Mar 2020</p>
-                        <p id="eduDesc">Triple black belt in Python, Mern, and C#</p>
-                    </div>
-                    
-                </div>
-            </main>
-            <aside class="flex-25 col">
-                <div id="requests">
-                    
-                    <div class="flex-10 whiteText" id="requestsStripe">
-                        <p>2</p>
-                        <h2>Connection Requests</h2>
-                    </div>
-                    
-                    <div class="grayBorder" id="requestsContent">
-                        <div class="flex-25 col">
-                            <div class="row">
-                                <div class="flex-15 userBox">
-                                    <img src="images/todd-s.jpg" alt="Picture of Todd E">
-                                    <p>Todd E</p>
-                                </div>
-                                <div id="acceptReject">
-                                    <img src="icons/accept-circle.png" alt="Accept Icon">
-                                    <img src="icons/close-circle.png" alt="Reject Icon">
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="flex-15 userBox">
-                                    <img src="images/phil-s.jpg" alt="Picture of Phil K">
-                                    <p>Phil K</p>
-                                </div>
-                                <div id="acceptReject">
-                                    <img src="icons/accept-circle.png" alt="Accept Icon">
-                                    <img src="icons/close-circle.png" alt="Reject Icon">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                </div>
-                <div id="connections">
-                    
-                    <div class="flex-10 whiteText" id="connectionsStripe">
-                        <p>500+</p>
-                        <h2>Your Connections</h2>
-                    </div>
-                    <div class="grayBorder" id="connectionsContent">
-                        <div class="flex-25 col">
-                            <div class="row">
-                                <div class="flex-15 userBox">
-                                    <img src="images/adrien-s.jpg" alt="Picture of Adrien D">
-                                    <p>Adrien D</p>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="flex-15 userBox">
-                                    <img src="images/anne-s.jpg" alt="Picture of Anne J">
-                                    <p>Anne J</p>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="flex-15 userBox">
-                                    <img src="images/alayne-s.jpg" alt="Picture of Alayne T">
-                                    <p>Alayne T</p>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="flex-15 userBox">
-                                    <img src="images/arry-s.jpg" alt="Picture of Arry Y">
-                                    <p>Arry Y</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="grayBorder" id="viewMore">
-                        <p><a href="#">View More</a></p>
-                        <!-- <p>View More</p> -->
-                    </div>
-                    
-                </div>
-            </aside>
+    
+    <nav class="flex">
+        <div class="flex-25 whiteText" id="navTitle">
+            <p>Profile</p>
+            <ul class="flex-20" id="navLinks">
+                <li><a href="#">Home</a></li>
+                <li><a href="#" class="active whiteText">My Profile</a></li>
+                <li><a href="#">Find Connections</a></li>
+            </ul>
         </div>
+        <button class="btn whiteText">Sign Out</button>
+    </nav>
+    
+    <div class="flex-25" id="container">
+        <main class="flex-25 col">
+            <div id="profileIntro">
+                
+                <div id="profileStripe"></div>
+                <div class="grayBorder" id="profileContent">
+                    
+                    <img src="images/jane-m.jpg" alt="Picture of Jane Doe" id="userCircle">
+                    <h1>Jane Doe</h1>
+                    
+                    <div class="flex-5" id="location">
+                        <img src="icons/map-marker.png" alt="map marker" id="marker">
+                        <p>Seattle</p>
+                    </div>
+                    
+                    <p id="profileDescription">Developer | Engineer | Problem Solver<br>Master of shadows and the Internet!</p>
+                    
+                    <div class="flex-5" id="edit">
+                        <img src="icons/gear.png" alt="gear icon" id="gear">
+                        <p><a href="#">edit profile</a></p>
+                    </div>
+                    
+                </div>
+                
+            </div>
+            <div id="education">
+                
+                <h2 class="flex-10 whiteText" id="educationStripe">Education</h2>
+                
+                <div class="grayBorder" id="educationContent">
+                    <h3>Coding Dojo - Full Stack Bootcamp</h3>
+                    <p id="eduDate">Dec 2019 - Mar 2020</p>
+                    <p id="eduDesc">Triple black belt in Python, Mern, and C#</p>
+                </div>
+                
+            </div>
+        </main>
+        <aside class="flex-25 col">
+            <div id="requests">
+                
+                <h2 class="flex-10 whiteText" id="requestsStripe"><span>2</span>Connection Requests</h2>
+                
+                <div class="flex-25 col grayBorder" id="requestsContent">
+                    <div class="row">
+                        <div class="flex-15 userBox">
+                            <img src="images/todd-s.jpg" alt="Picture of Todd E">
+                            <p>Todd E</p>
+                        </div>
+                        <div id="acceptReject">
+                            <img src="icons/accept-circle.png" alt="Accept Icon">
+                            <img src="icons/close-circle.png" alt="Reject Icon">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="flex-15 userBox">
+                            <img src="images/phil-s.jpg" alt="Picture of Phil K">
+                            <p>Phil K</p>
+                        </div>
+                        <div id="acceptReject">
+                            <img src="icons/accept-circle.png" alt="Accept Icon">
+                            <img src="icons/close-circle.png" alt="Reject Icon">
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            <div id="connections">
+                
+                <h2 class="flex-10 whiteText" id="connectionsStripe"><span>500+</span>Your Connections</h2>
+                
+                <div class="grayBorder" id="connectionsContent">
+                    <div class="flex-25 col">
+                        <div class="row">
+                            <div class="flex-15 userBox">
+                                <img src="images/adrien-s.jpg" alt="Picture of Adrien D">
+                                <p>Adrien D</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="flex-15 userBox">
+                                <img src="images/anne-s.jpg" alt="Picture of Anne J">
+                                <p>Anne J</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="flex-15 userBox">
+                                <img src="images/alayne-s.jpg" alt="Picture of Alayne T">
+                                <p>Alayne T</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="flex-15 userBox">
+                                <img src="images/arry-s.jpg" alt="Picture of Arry Y">
+                                <p>Arry Y</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="grayBorder" id="viewMore">
+                    <p><a href="#">View More</a></p>
+                    <!-- <p>View More</p> -->
+                </div>
+                
+            </div>
+        </aside>
     </div>
+    
 </body>
 </html>

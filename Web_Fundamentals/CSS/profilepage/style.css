@@ -27,7 +27,7 @@ h2, aside p  {
 h3 {
     font-size: 1.3em;
 }
-#viewMore p a {
+#viewMore p a, h2 span {
     font-size: inherit;
 }
 .grayBorder {
@@ -63,9 +63,9 @@ nav {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+    background-color: black;
 
-    margin: 0 15%;
-    padding: 16px 0;
+    padding: 16px 15%;
 }
 li a {
     color: gray;
@@ -83,7 +83,6 @@ ul#navLinks {
     
     list-style-type: none;
 }
-
 li {
     display: block;
 }
@@ -93,16 +92,10 @@ li {
     padding: 2px 14px;
     background-color: dodgerblue;
 }
-/* ----------- HEADER ----------- */
-header {
-    background-color: black;
-}
-
-#outerContainer {
-    margin: 0 15%;
-}
-#innerContainer {
+/* ----------- CONTAINER ----------- */
+#container {
     flex-wrap: wrap;
+    padding: 0 15%;
 }
 /* ----------- PROFILE ----------- */
 main {
@@ -157,7 +150,7 @@ aside {
     
     padding: 14px 23px;
 }
-#educationStripe p, #requestsStripe p, #connectionsStripe p {
+aside span {
     background-color: #999999;
     color: #2a2a2a;
     border-radius: 50%;
