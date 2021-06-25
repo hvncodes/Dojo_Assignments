@@ -9,24 +9,28 @@ body, a, .btn {
     text-decoration: none;
 }
 
-.nav {
+nav {
     background-color: gray;
     display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
     justify-content: space-between;
+    margin: 0 15%;
     padding: 24px 36px;
 }
 
 ul {
     display: flex;
-    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
     align-items: center;
+
     list-style-type: none;
 }
 
 li {
     /* border: 1px solid red; */
     display: block;
-    margin-left: 40px;
     font-size: 1.4em;
 }
 
