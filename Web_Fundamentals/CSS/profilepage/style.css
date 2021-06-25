@@ -1,0 +1,207 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 12pt;
+}
+body {
+    display: flex;
+    gap: 25px;
+    flex-direction: column;
+}
+h2 {
+    font-size: 20px;
+}
+body, a, .btn {
+    /* font-family: 'Roboto', sans-serif; */
+    font-family: cursive;
+    /* text-decoration: none; */
+}
+#profileContent, #educationContent, #requestsContent, #connectionsContent, #viewMore {
+    border: 5px solid silver;
+    border-top: 0;
+    padding: 18px;
+}
+/* ----------- NAV ----------- */
+nav {
+    /* background-color: gray; */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 15%;
+    padding: 16px 0;
+}
+li a {
+    color: gray;
+}
+li a.active {
+    font-weight: 900;
+    color: #fff;
+}
+#nav-title {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    color: #fff;
+}
+#nav-title p {
+    font-size: 1.8em;
+}
+ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
+
+    list-style-type: none;
+}
+
+li {
+    display: block;
+    font-size: 1em;
+}
+.btn {
+    border-radius: 3px;
+    border: 1px solid #fff;
+    padding: 2px 14px;
+    background-color: dodgerblue;
+    font-size: 1em;
+    color: #fff;
+}
+/* ----------- HEADER ----------- */
+header {
+    /* height: 50px; */
+
+    background-color: black;
+}
+
+#outerContainer {
+    margin: 0 15%;
+}
+#innerContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+/* ----------- PROFILE ----------- */
+main {
+    flex: 3;
+    /* height: 600px;
+    background-color: orange; */
+
+    display: flex;
+    gap: 25px;
+    flex-direction: column;
+}
+/* #profileIntro {
+    background-color: rebeccapurple;
+} */
+#profileStripe {
+    height: 80px;
+    background-color: crimson;
+}
+#userCircle {
+    display: block;
+    height: 80px;
+    border: 3px solid silver;
+    border-radius: 50%;
+    padding: 3px;
+    background-color: white;
+    position: absolute;
+    top: -46px;
+}
+#profileContent {
+    position: relative;
+}
+#profileContent h1 {
+    margin: 28px 0 10px;
+    font-size: 1.8em;
+}
+/* LOCATION */
+#location, #edit {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 5px;
+}
+#location p, #edit p {
+    font-size: 16px;
+}
+#marker, #gear {
+    height: 14px;
+}
+/* EDIT */
+#edit a, #viewMore a {
+    color: royalblue;
+}
+#location, #profileDescription {
+    margin-bottom: 10px;
+}
+/* ----------- ASIDE ----------- */
+aside {
+    flex: 2;
+    height: 600px;
+
+    /* background-color: orange; */
+
+    display: flex;
+    gap: 25px;
+    flex-direction: column;
+}
+#educationStripe, #requestsStripe, #connectionsStripe {
+    background-color: #2a2a2a;
+    color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 23px;
+}
+#educationStripe p, #requestsStripe p, #connectionsStripe p {
+    color: #2a2a2a;
+    background-color: #999999;
+    border-radius: 50%;
+    padding: 5px 12px;
+}
+/* ----------- EDUCATION ----------- */
+#educationContent h3 {
+    font-size: 1.6em;
+    margin-bottom: 0.2em;
+}
+#eduDate {
+    color:rgb(75, 75, 75);
+    font-size: 1.2em;
+    margin-bottom: 0.8em;
+}
+/* ----------- REQUESTS / CONNECTIONS----------- */
+.col {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+.row {
+    /* background: red; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+#requestsName {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 15px;
+}
+#requestsName p, #viewMore a{
+    font-size: 1.6em;
+}
+#requestsName img {
+    border-radius: 50%;
+    background: black;
+    border: 3px solid black;
+}
+#requestsName img, #requestsName p, #acceptReject img {
+    height: 34px;
+}
