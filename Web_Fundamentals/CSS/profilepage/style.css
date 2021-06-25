@@ -2,77 +2,99 @@
     margin: 0;
     padding: 0;
     font-size: 12pt;
-}
-body {
-    display: flex;
-    gap: 25px;
-    flex-direction: column;
-}
-h2 {
-    font-size: 20px;
-}
-body, a, .btn {
+    font-weight: normal;
     /* font-family: 'Roboto', sans-serif; */
     font-family: cursive;
-    /* text-decoration: none; */
 }
-#profileContent, #educationContent, #requestsContent, #connectionsContent, #viewMore {
-    border: 5px solid silver;
+.whiteText {
+    color: #fff;
+}
+.col {
+    flex-direction: column;
+}
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+#navTitle p, #profileContent h1 {
+    font-size: 1.8em;
+}
+h2, aside p  {
+    font-size: 1.4em;
+}
+h3 {
+    font-size: 1.3em;
+}
+#viewMore p a {
+    font-size: inherit;
+}
+.grayBorder {
+    border: 3px solid #cdcdcd;
     border-top: 0;
     padding: 18px;
 }
+.flex {
+    display: flex;
+}
+.flex-25 {
+    display: flex;
+    gap: 25px;
+}
+.flex-20 {
+    display: flex;
+    gap: 20px;
+}
+.flex-15 {
+    display: flex;
+    gap: 15px;
+}
+.flex-10 {
+    display: flex;
+    gap: 10px;
+}
+.flex-5 {
+    display: flex;
+    gap: 5px;
+}
 /* ----------- NAV ----------- */
 nav {
-    /* background-color: gray; */
-    display: flex;
     flex-wrap: wrap;
-    gap: 20px;
     justify-content: space-between;
     align-items: center;
+
     margin: 0 15%;
     padding: 16px 0;
 }
 li a {
     color: gray;
+    text-decoration: none;
 }
-li a.active {
-    font-weight: 900;
-    color: #fff;
+a.active {
+    font-weight: 700;
 }
-#nav-title {
-    display: flex;
+#navTitle {
     flex-wrap: wrap;
-    gap: 25px;
-    color: #fff;
 }
-#nav-title p {
-    font-size: 1.8em;
-}
-ul {
-    display: flex;
+ul#navLinks {
     flex-wrap: wrap;
-    gap: 20px;
     align-items: center;
-
+    
     list-style-type: none;
 }
 
 li {
     display: block;
-    font-size: 1em;
 }
 .btn {
     border-radius: 3px;
     border: 1px solid #fff;
     padding: 2px 14px;
     background-color: dodgerblue;
-    font-size: 1em;
-    color: #fff;
 }
 /* ----------- HEADER ----------- */
 header {
-    /* height: 50px; */
-
     background-color: black;
 }
 
@@ -80,34 +102,24 @@ header {
     margin: 0 15%;
 }
 #innerContainer {
-    display: flex;
     flex-wrap: wrap;
-    gap: 25px;
 }
 /* ----------- PROFILE ----------- */
 main {
     flex: 3;
-    /* height: 600px;
-    background-color: orange; */
-
-    display: flex;
-    gap: 25px;
-    flex-direction: column;
 }
-/* #profileIntro {
-    background-color: rebeccapurple;
-} */
 #profileStripe {
-    height: 80px;
     background-color: crimson;
+    height: 90px;
 }
 #userCircle {
+    background-color: #fff;
     display: block;
     height: 80px;
     border: 3px solid silver;
     border-radius: 50%;
     padding: 3px;
-    background-color: white;
+    
     position: absolute;
     top: -46px;
 }
@@ -116,17 +128,11 @@ main {
 }
 #profileContent h1 {
     margin: 28px 0 10px;
-    font-size: 1.8em;
 }
 /* LOCATION */
 #location, #edit {
-    display: flex;
     align-items: center;
     justify-content: flex-start;
-    gap: 5px;
-}
-#location p, #edit p {
-    font-size: 16px;
 }
 #marker, #gear {
     height: 14px;
@@ -141,67 +147,40 @@ main {
 /* ----------- ASIDE ----------- */
 aside {
     flex: 2;
-    height: 600px;
-
-    /* background-color: orange; */
-
-    display: flex;
-    gap: 25px;
-    flex-direction: column;
 }
 #educationStripe, #requestsStripe, #connectionsStripe {
     background-color: #2a2a2a;
-    color: #fff;
-    display: flex;
+    
     flex-wrap: wrap;
-    gap: 10px;
     align-items: center;
-    justify-content: flex-start;
-    padding: 23px;
+    justify-content: space-between;
+    
+    padding: 14px 23px;
 }
 #educationStripe p, #requestsStripe p, #connectionsStripe p {
-    color: #2a2a2a;
     background-color: #999999;
+    color: #2a2a2a;
     border-radius: 50%;
-    padding: 5px 12px;
+    padding: 0px 10px;
 }
 /* ----------- EDUCATION ----------- */
 #educationContent h3 {
-    font-size: 1.6em;
     margin-bottom: 0.2em;
 }
 #eduDate {
     color:rgb(75, 75, 75);
-    font-size: 1.2em;
     margin-bottom: 0.8em;
 }
 /* ----------- REQUESTS / CONNECTIONS----------- */
-.col {
-    display: flex;
-    flex-direction: column;
-    gap: 25px;
-}
-.row {
-    /* background: red; */
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-}
-#requestsName {
-    display: flex;
+.userBox {
     align-items: center;
     justify-content: flex-start;
-    gap: 15px;
 }
-#requestsName p, #viewMore a{
-    font-size: 1.6em;
-}
-#requestsName img {
+.userBox img {
     border-radius: 50%;
     background: black;
     border: 3px solid black;
 }
-#requestsName img, #requestsName p, #acceptReject img {
+.userBox img, .userBox p, #acceptReject img {
     height: 34px;
 }
