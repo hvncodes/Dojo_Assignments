@@ -1,0 +1,111 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+    font-size: 1em;
+}
+h1, h2 {
+    font-size: 1.8em;
+}
+p {
+    font-size: 1.2em;
+}
+body {
+    font-family: cursive;
+}
+.bold {
+    font-weight: bold;
+}
+#container {
+    padding: 0 10%;
+}
+/* nav, main, .word, .definition */
+aside, .definitionContainer {
+    border: 3px solid black;
+}
+nav {
+    background-color: coral;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /* margin: 0 15%; */
+    padding: 24px;
+    gap: 24px;
+}
+nav>h1, nav>#loginBtn {
+    /* flex: 1; */
+}
+nav>#searchBar {
+    /* flex: 1; */
+    width: 300px;
+}
+#content {
+    display: flex;
+    margin-top: 24px;
+    gap: 24px
+}
+main {
+    flex: 3;
+    /* background-color: cornflowerblue; */
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+.definitionContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /* gap: 36px; */
+    /* padding: 24px; */
+}
+.word {
+    padding: 28px 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.definition {
+    padding: 0 36px;
+}
+aside {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    
+    align-self: baseline;
+
+    /* background-color: khaki; */
+    padding: 36px 16px;
+}
+
+#loginBtn {
+    border: 3px solid black;
+    box-shadow: 3px 3px black;
+    padding: 10px 30px;
+    font-size: 1em;
+
+    background-color: dodgerblue;
+    color: #fff;
+}
+.likeBtn {
+    border: 3px solid black;
+    box-shadow: 3px 3px black;
+    padding: 10px 30px;
+    font-size: 1em;
+
+    margin-top: 14px;
+    background-color: khaki;
+    color: black;
+}
+
+.addBtn {
+    border: 3px solid black;
+    box-shadow: 3px 3px black;
+    padding: 10px 30px;
+    font-size: 1em;
+
+    background-color: lightgreen;
+    color: black;
+}
