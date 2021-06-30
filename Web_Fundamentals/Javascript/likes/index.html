@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Likes</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <nav>Network</nav>
+    <h1>Your Feed</h1>
+    <div id="container">
+        <main>
+            <img src="img/user-circle.png" alt="user icon">
+            <a href="#">Add an avatar</a>
+            <h2>James Doe</h2>
+        </main>
+        <aside>
+            <div class="feedContainer">
+                <div class="feedHeader">
+                    <h2 class="feedName">Neil M</h2>
+                        <div class="likeContainer">
+                            <p class="numOfLikes">9 like(s)</p>
+                            <button class="likeBtn" onclick="likeBtnClicked(this)">Like</button>
+                        </div>
+                </div>
+                <p class="feedContent">I just set up this new discord bot, let me know what you all think. <a href="#">LINK</a></p>
+            </div>
+            <div class="feedContainer">
+                <div class="feedHeader">
+                    <h2 class="feedName">Nicole K</h2>
+                    <div class="likeContainer">
+                        <p class="numOfLikes">12 like(s)</p>
+                        <button class="likeBtn" onclick="likeBtnClicked(this)">Like</button>
+                    </div>
+                </div>
+                <p class="feedContent">Just fiished my <a href="#">next comic</a>, check it out.</p>
+            </div>
+            <div class="feedContainer">
+                <div class="feedHeader">
+                    <h2 class="feedName">Jim R</h2>
+                    <div class="likeContainer">
+                        <p class="numOfLikes">9 like(s)</p>
+                        <button class="likeBtn" onclick="likeBtnClicked(this)">Like</button>
+                    </div>
+                </div>
+                <p class="feedContent">I can't stop listening to the <a href="#">new album</a> who else is liking it?</p>
+            </div>
+        </aside>
+    </div>
+</body>
+</html>
