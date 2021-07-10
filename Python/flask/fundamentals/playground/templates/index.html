@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playground {{numOfDiv}}</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        #container {
+            margin: 0 15%;
+            /* background: lightcoral; */
+            /* width: -webkit-fit-content;
+            width: fit-content; */
+        }
+        /* #container::after {
+            content: "";
+            flex: auto;
+        } */
+        /* #container div:last-child { margin-right: auto; } */
+        .box {
+            height: 200px;
+            width: 200px;
+            border: 3px solid black;
+        }
+        .boxColor {
+            background-color: {{bgcolor}};
+        }
+        .flex {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        h1 {
+            margin: 0 15%;
+            text-align: center;
+            padding: 100px 0 50px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to Playground {{numOfDiv}}!</h1>
+    <div class="flex" id="container">
+        {% for x in range(0,numOfDiv): %}
+        <div class="box boxColor"></div>
+        {% endfor %}
+    </div>
+</body>
+</html>
