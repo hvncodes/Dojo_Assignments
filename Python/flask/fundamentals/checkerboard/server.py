@@ -5,11 +5,11 @@ def hello_world():
     return render_template('index.html', x=8, y=8)
 
 @app.route('/<x>')
-def playNum(x): #int(x)
+def checkerboardX(x):
     return render_template('index.html', x=int(x), y=8)
 
 @app.route('/<x>/<y>')
-def playNumColor(x, y):
+def checkerboardXY(x, y):
     return render_template('index.html', x=int(x), y=int(y))
 
 @app.errorhandler(404)
