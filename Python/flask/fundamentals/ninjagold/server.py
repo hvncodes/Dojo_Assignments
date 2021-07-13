@@ -1,5 +1,6 @@
 from flask import Flask, render_template, request, redirect, session
 from random import randint
+from datetime import datetime
 
 app = Flask(__name__)
 app.secret_key = "SECRET KEY GOES HERE"
@@ -10,10 +11,13 @@ def index():
         session["gold"] = 0
         session["activities"] = []
     return render_template('index.html')
-# <form action="/process_money" method="post">
-#   <input type="hidden" name="building" value="farm" />
-#   <input type="submit" value="Find Gold!"/>
-# </form>
+
+# delete session
+@app.route('/clear')
+def sessionClear():
+    session.clear()
+    return redirect('/')
+
 @app.route('/process_money', methods=['POST'])
 def process():
     building = request.form['building']
@@ -27,12 +31,17 @@ def process():
         gold = randint(-50,50)
     session["gold"] += gold
 
-    if request.form['building'] == 'casino':
-        session["activities"].append(f"Entered a casino and and lost {gold} golds... Ouch.. TIME")
-    else:   #or farm, cave, house
-        session["activities"].append(f"Earned {gold} golds from the {building}! TIME")
-    return redirect('/')
+    now = datetime.now()
+    current_time = now.strftime("%D %H: %M: %S")
 
+    if gold == 0:
+        session["activities"].append(f'<p>Lost {gold} gold from the {building} Whew! {current_time}</p>')
+    elif gold > 0:
+        session["activities"].append(f'<p class="won">Earned {gold} golds from the {building}! {current_time}</p>')
+    else: # else gold negative
+        session["activities"].append(f'<p class="lost">Entered a casino and and lost {abs(gold)} golds... Ouch.. {current_time}</p>')
+    
+    return redirect('/')
 
 @app.errorhandler(404)
 def page_not_found(e):
