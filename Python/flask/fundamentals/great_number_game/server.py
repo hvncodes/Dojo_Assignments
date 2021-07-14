@@ -8,8 +8,6 @@ app.secret_key = "SECRET KEY GOES HERE"
 def index():
     if "number" not in session:
         session["number"] = randint(1, 100)
-    else:
-        session["thing"] = "other thing"
     return render_template('index.html')
 
 @app.route('/guess', methods=['POST'])
