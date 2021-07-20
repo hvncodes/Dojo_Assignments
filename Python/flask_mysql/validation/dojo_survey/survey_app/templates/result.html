@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dojo Survey: Result</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+</head>
+<body>
+    <div class="w-50 mt-5 mx-auto p-4 border border-primary rounded d-flex flex-wrap">
+        <h1 class="col-12 mb-3">Submitted Info</h1>
+        <p class="col-6">Name:</p>
+        <p class="col-6">{{survey.name}}</p>
+
+        <p class="col-6">Dojo Location:</p>
+        <p class="col-6">{{survey.location}}</p>
+
+        <p class="col-6">Language</p>
+        <p class="col-6">{{survey.language}}</p>
+
+        <p class="col-6">Comment:</p>
+        <p class="col-6">{{survey.comment}}</p>
+        <a href="/" class="btn btn-primary mt-5">Go Back</a>
+    </div>
+</body>
+</html>
