@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Success Page</title>
+    <style>
+    p.flash_success {
+        width: 50%;
+        background: lightgreen;
+        border: 2px solid black;
+        padding: 5px 10px;
+    }
+    </style>
+</head>
+<body>
+    <!-- Some Kind of Success Alert Here, check if session successful?
+    No... if we're here it must be successful. FLASH Inject Email into
+    "The email address you entered ____ is a VALID email address! Thank you!" -->
+    {% with email_success = get_flashed_messages(category_filter=['email']) %}
+        {% if email_success %}
+        {% for message in email_success %}
+        <p class="flash_success">{{ message }}</p>
+        {% endfor %}
+        {% endif %}
+    {% endwith %}
+    <h1>Email Addressesses Entered:</h1>
+    {% for one_email in emails %}
+    <p>{{one_email.email}} --- {{one_email.created_at}}</p>
+    {% endfor %}
+</body>
+</html>
