@@ -1,7 +1,7 @@
 from flask import render_template,redirect,request
 from flask_app import app
 from flask_app.models.dojo import Dojo
-from flask_app.models.dojo import Ninja
+from flask_app.models.ninja import Ninja
 
 @app.route("/")
 def index():
@@ -19,11 +19,11 @@ def dojoPage(url_id):
     data = {
         "id": url_id,
     }
-    dojo = Dojo.get(data)
+    dojo = Dojo.get_dojo_with_ninjas(data)
     dojo_id = dojo.id
     dojo_name = dojo.name
     #get all ninjas in dojo ID
-    ninjas = Dojo.get_dojo_with_ninjas(data).ninjas
+    ninjas = dojo.ninjas
     return render_template("dojo_show.html", all_ninjas=ninjas, dojo_id=dojo_id, dojo_name=dojo_name)
 
 @app.route("/ninjas")
@@ -45,7 +45,8 @@ def create_ninja():
     # print(data["dojo_id"])
     # return redirect("/ninjas")
     Ninja.add_ninja(data)
-    return redirect(f"/dojos/{data['dojo_id']}")
+    dojo_id = request.form["dojoSelect"] #or data['dojo_id']
+    return redirect(f"/dojos/{dojo_id}")
 
 @app.route('/create_dojo', methods=["POST"])
 def create_dojo():
