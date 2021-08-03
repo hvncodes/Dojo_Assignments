@@ -10,7 +10,9 @@ The contents of each lecture will be associated with the folder that the lecture
 terminal should ask for pw
 
 > dotnet --version
+> 
 > dotnet new console -o FirstCSharp
+> 
 > cd FirstCSharp
 
 generates standard console application
