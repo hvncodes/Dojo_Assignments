@@ -1,0 +1,16 @@
+C:\Users\Clear\Desktop\Dojo_Assignments\Csharp\FirstCSharp\bin\Debug\net5.0\FirstCSharp.exe
+C:\Users\Clear\Desktop\Dojo_Assignments\Csharp\FirstCSharp\bin\Debug\net5.0\FirstCSharp.deps.json
+C:\Users\Clear\Desktop\Dojo_Assignments\Csharp\FirstCSharp\bin\Debug\net5.0\FirstCSharp.runtimeconfig.json
+C:\Users\Clear\Desktop\Dojo_Assignments\Csharp\FirstCSharp\bin\Debug\net5.0\FirstCSharp.runtimeconfig.dev.json
+C:\Users\Clear\Desktop\Dojo_Assignments\Csharp\FirstCSharp\bin\Debug\net5.0\FirstCSharp.dll
+C:\Users\Clear\Desktop\Dojo_Assignments\Csharp\FirstCSharp\bin\Debug\net5.0\ref\FirstCSharp.dll
+C:\Users\Clear\Desktop\Dojo_Assignments\Csharp\FirstCSharp\bin\Debug\net5.0\FirstCSharp.pdb
+C:\Users\Clear\Desktop\Dojo_Assignments\Csharp\FirstCSharp\obj\Debug\net5.0\FirstCSharp.csproj.AssemblyReference.cache
+C:\Users\Clear\Desktop\Dojo_Assignments\Csharp\FirstCSharp\obj\Debug\net5.0\FirstCSharp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Clear\Desktop\Dojo_Assignments\Csharp\FirstCSharp\obj\Debug\net5.0\FirstCSharp.AssemblyInfoInputs.cache
+C:\Users\Clear\Desktop\Dojo_Assignments\Csharp\FirstCSharp\obj\Debug\net5.0\FirstCSharp.AssemblyInfo.cs
+C:\Users\Clear\Desktop\Dojo_Assignments\Csharp\FirstCSharp\obj\Debug\net5.0\FirstCSharp.csproj.CoreCompileInputs.cache
+C:\Users\Clear\Desktop\Dojo_Assignments\Csharp\FirstCSharp\obj\Debug\net5.0\FirstCSharp.dll
+C:\Users\Clear\Desktop\Dojo_Assignments\Csharp\FirstCSharp\obj\Debug\net5.0\ref\FirstCSharp.dll
+C:\Users\Clear\Desktop\Dojo_Assignments\Csharp\FirstCSharp\obj\Debug\net5.0\FirstCSharp.pdb
+C:\Users\Clear\Desktop\Dojo_Assignments\Csharp\FirstCSharp\obj\Debug\net5.0\FirstCSharp.genruntimeconfig.cache
