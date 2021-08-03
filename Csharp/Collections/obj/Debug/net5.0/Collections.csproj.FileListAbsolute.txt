@@ -1,0 +1,16 @@
+C:\Users\Clear\Desktop\Dojo_Assignments\Csharp\Collections\obj\Debug\net5.0\Collections.csproj.AssemblyReference.cache
+C:\Users\Clear\Desktop\Dojo_Assignments\Csharp\Collections\obj\Debug\net5.0\Collections.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Clear\Desktop\Dojo_Assignments\Csharp\Collections\obj\Debug\net5.0\Collections.AssemblyInfoInputs.cache
+C:\Users\Clear\Desktop\Dojo_Assignments\Csharp\Collections\obj\Debug\net5.0\Collections.AssemblyInfo.cs
+C:\Users\Clear\Desktop\Dojo_Assignments\Csharp\Collections\obj\Debug\net5.0\Collections.csproj.CoreCompileInputs.cache
+C:\Users\Clear\Desktop\Dojo_Assignments\Csharp\Collections\bin\Debug\net5.0\Collections.exe
+C:\Users\Clear\Desktop\Dojo_Assignments\Csharp\Collections\bin\Debug\net5.0\Collections.deps.json
+C:\Users\Clear\Desktop\Dojo_Assignments\Csharp\Collections\bin\Debug\net5.0\Collections.runtimeconfig.json
+C:\Users\Clear\Desktop\Dojo_Assignments\Csharp\Collections\bin\Debug\net5.0\Collections.runtimeconfig.dev.json
+C:\Users\Clear\Desktop\Dojo_Assignments\Csharp\Collections\bin\Debug\net5.0\Collections.dll
+C:\Users\Clear\Desktop\Dojo_Assignments\Csharp\Collections\bin\Debug\net5.0\ref\Collections.dll
+C:\Users\Clear\Desktop\Dojo_Assignments\Csharp\Collections\bin\Debug\net5.0\Collections.pdb
+C:\Users\Clear\Desktop\Dojo_Assignments\Csharp\Collections\obj\Debug\net5.0\Collections.dll
+C:\Users\Clear\Desktop\Dojo_Assignments\Csharp\Collections\obj\Debug\net5.0\ref\Collections.dll
+C:\Users\Clear\Desktop\Dojo_Assignments\Csharp\Collections\obj\Debug\net5.0\Collections.pdb
+C:\Users\Clear\Desktop\Dojo_Assignments\Csharp\Collections\obj\Debug\net5.0\Collections.genruntimeconfig.cache
