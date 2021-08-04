@@ -1,0 +1,16 @@
+C:\Users\Clear\Desktop\Dojo_Assignments\Csharp\Basic13\bin\Debug\net5.0\Basic13.exe
+C:\Users\Clear\Desktop\Dojo_Assignments\Csharp\Basic13\bin\Debug\net5.0\Basic13.deps.json
+C:\Users\Clear\Desktop\Dojo_Assignments\Csharp\Basic13\bin\Debug\net5.0\Basic13.runtimeconfig.json
+C:\Users\Clear\Desktop\Dojo_Assignments\Csharp\Basic13\bin\Debug\net5.0\Basic13.runtimeconfig.dev.json
+C:\Users\Clear\Desktop\Dojo_Assignments\Csharp\Basic13\bin\Debug\net5.0\Basic13.dll
+C:\Users\Clear\Desktop\Dojo_Assignments\Csharp\Basic13\bin\Debug\net5.0\ref\Basic13.dll
+C:\Users\Clear\Desktop\Dojo_Assignments\Csharp\Basic13\bin\Debug\net5.0\Basic13.pdb
+C:\Users\Clear\Desktop\Dojo_Assignments\Csharp\Basic13\obj\Debug\net5.0\Basic13.csproj.AssemblyReference.cache
+C:\Users\Clear\Desktop\Dojo_Assignments\Csharp\Basic13\obj\Debug\net5.0\Basic13.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Clear\Desktop\Dojo_Assignments\Csharp\Basic13\obj\Debug\net5.0\Basic13.AssemblyInfoInputs.cache
+C:\Users\Clear\Desktop\Dojo_Assignments\Csharp\Basic13\obj\Debug\net5.0\Basic13.AssemblyInfo.cs
+C:\Users\Clear\Desktop\Dojo_Assignments\Csharp\Basic13\obj\Debug\net5.0\Basic13.csproj.CoreCompileInputs.cache
+C:\Users\Clear\Desktop\Dojo_Assignments\Csharp\Basic13\obj\Debug\net5.0\Basic13.dll
+C:\Users\Clear\Desktop\Dojo_Assignments\Csharp\Basic13\obj\Debug\net5.0\ref\Basic13.dll
+C:\Users\Clear\Desktop\Dojo_Assignments\Csharp\Basic13\obj\Debug\net5.0\Basic13.pdb
+C:\Users\Clear\Desktop\Dojo_Assignments\Csharp\Basic13\obj\Debug\net5.0\Basic13.genruntimeconfig.cache
