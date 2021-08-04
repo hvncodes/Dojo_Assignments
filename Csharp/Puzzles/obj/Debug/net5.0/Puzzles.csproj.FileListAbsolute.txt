@@ -1,0 +1,16 @@
+C:\Users\Clear\Desktop\Dojo_Assignments\Csharp\Puzzles\bin\Debug\net5.0\Puzzles.exe
+C:\Users\Clear\Desktop\Dojo_Assignments\Csharp\Puzzles\bin\Debug\net5.0\Puzzles.deps.json
+C:\Users\Clear\Desktop\Dojo_Assignments\Csharp\Puzzles\bin\Debug\net5.0\Puzzles.runtimeconfig.json
+C:\Users\Clear\Desktop\Dojo_Assignments\Csharp\Puzzles\bin\Debug\net5.0\Puzzles.runtimeconfig.dev.json
+C:\Users\Clear\Desktop\Dojo_Assignments\Csharp\Puzzles\bin\Debug\net5.0\Puzzles.dll
+C:\Users\Clear\Desktop\Dojo_Assignments\Csharp\Puzzles\bin\Debug\net5.0\ref\Puzzles.dll
+C:\Users\Clear\Desktop\Dojo_Assignments\Csharp\Puzzles\bin\Debug\net5.0\Puzzles.pdb
+C:\Users\Clear\Desktop\Dojo_Assignments\Csharp\Puzzles\obj\Debug\net5.0\Puzzles.csproj.AssemblyReference.cache
+C:\Users\Clear\Desktop\Dojo_Assignments\Csharp\Puzzles\obj\Debug\net5.0\Puzzles.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Clear\Desktop\Dojo_Assignments\Csharp\Puzzles\obj\Debug\net5.0\Puzzles.AssemblyInfoInputs.cache
+C:\Users\Clear\Desktop\Dojo_Assignments\Csharp\Puzzles\obj\Debug\net5.0\Puzzles.AssemblyInfo.cs
+C:\Users\Clear\Desktop\Dojo_Assignments\Csharp\Puzzles\obj\Debug\net5.0\Puzzles.csproj.CoreCompileInputs.cache
+C:\Users\Clear\Desktop\Dojo_Assignments\Csharp\Puzzles\obj\Debug\net5.0\Puzzles.dll
+C:\Users\Clear\Desktop\Dojo_Assignments\Csharp\Puzzles\obj\Debug\net5.0\ref\Puzzles.dll
+C:\Users\Clear\Desktop\Dojo_Assignments\Csharp\Puzzles\obj\Debug\net5.0\Puzzles.pdb
+C:\Users\Clear\Desktop\Dojo_Assignments\Csharp\Puzzles\obj\Debug\net5.0\Puzzles.genruntimeconfig.cache
