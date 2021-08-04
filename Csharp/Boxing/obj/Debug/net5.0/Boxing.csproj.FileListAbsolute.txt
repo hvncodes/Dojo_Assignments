@@ -1,0 +1,16 @@
+C:\Users\Clear\Desktop\Dojo_Assignments\Csharp\Boxing\obj\Debug\net5.0\Boxing.csproj.AssemblyReference.cache
+C:\Users\Clear\Desktop\Dojo_Assignments\Csharp\Boxing\obj\Debug\net5.0\Boxing.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Clear\Desktop\Dojo_Assignments\Csharp\Boxing\obj\Debug\net5.0\Boxing.AssemblyInfoInputs.cache
+C:\Users\Clear\Desktop\Dojo_Assignments\Csharp\Boxing\obj\Debug\net5.0\Boxing.AssemblyInfo.cs
+C:\Users\Clear\Desktop\Dojo_Assignments\Csharp\Boxing\obj\Debug\net5.0\Boxing.csproj.CoreCompileInputs.cache
+C:\Users\Clear\Desktop\Dojo_Assignments\Csharp\Boxing\bin\Debug\net5.0\Boxing.exe
+C:\Users\Clear\Desktop\Dojo_Assignments\Csharp\Boxing\bin\Debug\net5.0\Boxing.deps.json
+C:\Users\Clear\Desktop\Dojo_Assignments\Csharp\Boxing\bin\Debug\net5.0\Boxing.runtimeconfig.json
+C:\Users\Clear\Desktop\Dojo_Assignments\Csharp\Boxing\bin\Debug\net5.0\Boxing.runtimeconfig.dev.json
+C:\Users\Clear\Desktop\Dojo_Assignments\Csharp\Boxing\bin\Debug\net5.0\Boxing.dll
+C:\Users\Clear\Desktop\Dojo_Assignments\Csharp\Boxing\bin\Debug\net5.0\ref\Boxing.dll
+C:\Users\Clear\Desktop\Dojo_Assignments\Csharp\Boxing\bin\Debug\net5.0\Boxing.pdb
+C:\Users\Clear\Desktop\Dojo_Assignments\Csharp\Boxing\obj\Debug\net5.0\Boxing.dll
+C:\Users\Clear\Desktop\Dojo_Assignments\Csharp\Boxing\obj\Debug\net5.0\ref\Boxing.dll
+C:\Users\Clear\Desktop\Dojo_Assignments\Csharp\Boxing\obj\Debug\net5.0\Boxing.pdb
+C:\Users\Clear\Desktop\Dojo_Assignments\Csharp\Boxing\obj\Debug\net5.0\Boxing.genruntimeconfig.cache
