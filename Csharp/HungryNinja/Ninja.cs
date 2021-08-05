@@ -28,10 +28,13 @@ namespace HungryNinja
         if (IsFull)
         {
             Console.WriteLine("Ninja is full!");
+            Console.WriteLine("------------");
         }
         else
         {
             calorieIntake += item.Calories;
+            FoodHistory.Add(item);
+
             string statement = $"That {item.Name} was ";
             if (item.IsSweet && item.IsSpicy)
                 statement += "sweet and spicy!";
@@ -42,6 +45,8 @@ namespace HungryNinja
             else
                 statement += "mild.";
             Console.WriteLine(statement);
+            Console.WriteLine($"Calories: +{item.Calories}, Total: {calorieIntake}");
+            Console.WriteLine("------------");
         }
     }
 }
