@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello ASPIntro</title>
+    @* In this context '~' refers to the wwwroot folder *@
+    <link rel="stylesheet" href="~/css/style.css"/>
+</head>
+<body>
+    <h1>@ViewBag.Example</h1>
+    <h2>Here are some delicious foods!</h2>
+    @{
+        var words = new List<string>
+        {
+            "Apple Pie",
+            "Burritos",
+            "Clams",
+            "Donuts"
+        };
+        
+        foreach(var word in words)
+        {
+            @* Console.WriteLine(word);
+            Console.WriteLine(word.GetType());
+            Console.WriteLine(word[0]);
+            Console.WriteLine(word[0].GetType()); *@
+            <div>
+                @if (word.ToUpper()[0] == 'C')
+                {
+                    <p class="text-red">@word</p>
+                }
+                else
+                {
+                    <p>@word</p>
+                }
+                
+            </div>
+        }
+    }
+</body>
+</html>
