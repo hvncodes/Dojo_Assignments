@@ -1,0 +1,50 @@
+* {
+  outline: 1px solid red;
+}
+
+[aria-current="page"] {
+  pointer-events: none;
+  cursor: default;
+  text-decoration: none;
+  color: black;
+}
+
+nav, h1 {
+  width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.main-container {
+  width: 800px;
+  margin: 0 auto;
+  display: flex;
+  /* justify-content: space-around; */
+  gap: 20px;
+}
+
+.container {
+  width: 50%;
+}
+
+#profile-img {
+  width: 150px;
+  height: 150px;
+  border: 1px solid black;
+  border-radius: 5px;
+  margin: 0 auto;
+}
+
+.container p {
+  width: 150px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.mb-30 {
+  margin-bottom: 30px;
+}
+
+input#fullname, input#email {
+  display: block;
+}
