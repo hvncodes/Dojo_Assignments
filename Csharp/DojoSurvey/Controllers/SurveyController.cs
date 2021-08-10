@@ -13,18 +13,28 @@ namespace DojoSurvey
         {
             DateTime dt = DateTime.Now;
             ViewBag.dt = dt;
-            string header = "The current time and date:";
-            return View("Index", header);
+            return View("Index");
         }
 
-        [HttpPost("process")]
-        public IActionResult Result(string Name, string Location, string Language, string Comment)
+        [HttpPost("survey")]
+        public IActionResult Submission(Survey yourSurvey)
         {
-            ViewBag.Name = Name;
-            ViewBag.Location = Location;
-            ViewBag.Language = Language;
-            ViewBag.Comment = Comment;
-            return View("Result");
+            if(ModelState.IsValid)
+            {
+                return RedirectToAction("Result", yourSurvey);
+            }
+            else
+            {
+                DateTime dt = DateTime.Now;
+                ViewBag.dt = dt;
+                return View("Index");
+            }
+        }
+
+        [HttpGet("result")]
+        public ViewResult Result(Survey yourSurvey)
+        {
+            return View("Result", yourSurvey);
         }
 
         [HttpGet("numbers")]
