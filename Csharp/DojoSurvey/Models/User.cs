@@ -3,18 +3,19 @@ namespace DojoSurvey.Models
 {
     public class User
     {
-        [Required]
-        [MinLength(3)]
+        [Required(ErrorMessage = "is required.")]
+        [MinLength(2, ErrorMessage = "must be at least 2 characters.")]
+        [MaxLength(20, ErrorMessage = "must be 20 characters or fewer.")]
         public string FirstName {get;set;}
-        
-        [Required]
-        [MinLength(3)]
+
+        [Required(ErrorMessage = "is required.")]
+        [MinLength(2, ErrorMessage = "must be at least 2 characters.")]
+        [MaxLength(20, ErrorMessage = "must be 20 characters or fewer.")]
         public string LastName {get;set;}
 
         [Required(ErrorMessage = "is required.")]
         [MinLength(2, ErrorMessage = "must be at least 2 characters.")]
-        [MaxLength(20, ErrorMessage = "must be fewer than 20 characters.")]
-        [Display(Name = "User Name")]
+        [MaxLength(20, ErrorMessage = "must be 20 characters or fewer.")]
         public string Username {get;set;}
         
         [Required]
