@@ -1,3 +1,5 @@
+@using DojoSurvey.Models
+@model Survey
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,16 +13,16 @@
     <div class="w-50 mt-5 mx-auto p-4 border rounded shadow d-flex flex-wrap">
         <h1 class="col-12 mb-3">Submitted Info</h1>
         <p class="col-6">Name:</p>
-        <p class="col-6">@ViewBag.Name</p>
+        <p class="col-6">@Model.Name</p>
 
         <p class="col-6">Dojo Location:</p>
-        <p class="col-6">@ViewBag.Location</p>
+        <p class="col-6">@Model.Location</p>
 
         <p class="col-6">Language</p>
-        <p class="col-6">@ViewBag.Language</p>
+        <p class="col-6">@Model.Language</p>
 
         <p class="col-6">Comment:</p>
-        <p class="col-6">@ViewBag.Comment</p>
+        <p class="col-6">@Model.Comment</p>
         <a href="/" class="btn btn-primary mt-5">Go Back</a>
     </div>
 </body>
