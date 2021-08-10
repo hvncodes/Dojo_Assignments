@@ -3,15 +3,21 @@ namespace DojoSurvey.Models
 {
     public class Survey
     {
-        [Required]
-        [MinLength(2)]
+        [Required(ErrorMessage = "is required.")]
+        [MinLength(2, ErrorMessage = "must be at least 2 characters.")]
+        [MaxLength(20, ErrorMessage = "must be 20 characters or fewer.")]
+        [Display(Name = "Your Name:")]
         public string Name {get;set;}
-        [Required]
-        public string Location {get;set;}
-        [Required]
-        public string Language {get;set;}
-        [Required]
-        public string Comment {get;set;}
 
+        [Required(ErrorMessage = "is required.")]
+        [Display(Name = "Dojo Location:")]
+        public string Location {get;set;}
+
+        [Required(ErrorMessage = "is required.")]
+        [Display(Name = "Favorite Language:")]
+        public string Language {get;set;}
+
+        [Display(Name = "Comment (optional):")]
+        public string Comment {get;set;}
     }
 }
