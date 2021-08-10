@@ -30,7 +30,8 @@
             <label asp-for="Location" class="form-label"></label>
             <span asp-validation-for="Location" class="text-danger"></span>
             <select asp-for="Location" class="form-control">
-                <option value="San Jose" selected>San Jose</option>
+                <option value="" selected>-- LOCATION --</option>
+                <option value="San Jose">San Jose</option>
                 <option value="Seattle">Seattle</option>
                 <option value="Burbank">Burbank</option>
                 <option value="Online">Online</option>
@@ -41,7 +42,8 @@
             <label asp-for="Language" class="form-label"></label>
             <span asp-validation-for="Language" class="text-danger"></span>
             <select asp-for="Language" class="form-control">
-                <option value="HTML" selected>HTML</option>
+                <option value="" selected>-- LANGUAGE --</option>
+                <option value="HTML">HTML</option>
                 <option value="CSS">CSS</option>
                 <option value="Javascript">Javascript</option>
                 <option value="Python">Python</option>
