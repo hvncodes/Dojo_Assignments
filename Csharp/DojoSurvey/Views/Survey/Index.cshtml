@@ -1,4 +1,4 @@
-@model string
+@model Survey
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,23 +11,25 @@
 </head>
 <body>
     <div class="container mt-5 mx-auto">
-        <h2 class="text-center">@Model</h2>
+        <h2 class="text-center">The current time and date:</h2>
         <div id="datetime" class="container m-auto py-3 px-5">
             <p id="date" class="mb-3">@ViewBag.dt.ToString("MMM d, yyyy")</p>
             <p id="time">@ViewBag.dt.ToString("h:mm tt")</p>
         </div>
     </div>
 
-    <form action="/process" method="POST" class="w-25 mt-5 mx-auto p-4 border rounded-3 shadow">
+    <form asp-action="Submission" asp-controller="Survey" method="POST" class="w-25 mt-5 mx-auto p-4 border rounded-3 shadow">
 
         <div class="mb-3">
-            <label for="Name" class="form-label">Your Name:</label>
-            <input type="text" class="form-control" id="Name" name="Name" placeholder="e.g. John Doe">
+            <label asp-for="Name" class="form-label"></label>
+            <span asp-validation-for="Name" class="text-danger"></span>
+            <input asp-for="Name" class="form-control" placeholder="e.g. John Doe">
         </div>
 
         <div class="mb-3">
-            <label for="Location" class="form-label">Dojo Location:</label>
-            <select class="form-control" id="Location" name="Location">
+            <label asp-for="Location" class="form-label"></label>
+            <span asp-validation-for="Location" class="text-danger"></span>
+            <select asp-for="Location" class="form-control">
                 <option value="San Jose" selected>San Jose</option>
                 <option value="Seattle">Seattle</option>
                 <option value="Burbank">Burbank</option>
@@ -36,8 +38,9 @@
         </div>
 
         <div class="mb-3">
-            <label for="Language" class="form-label">Favorite Language:</label>
-            <select class="form-control" id="Language" name="Language">
+            <label asp-for="Language" class="form-label"></label>
+            <span asp-validation-for="Language" class="text-danger"></span>
+            <select asp-for="Language" class="form-control">
                 <option value="HTML" selected>HTML</option>
                 <option value="CSS">CSS</option>
                 <option value="Javascript">Javascript</option>
@@ -47,8 +50,8 @@
         </div>
 
         <div class="mb-3">
-            <label for="Comment" class="form-label">Comment (optional):</label>
-            <textarea class="form-control" id="Comment" name="Comment" rows="3"></textarea>
+            <label asp-for="Comment" class="form-label"></label>
+            <textarea asp-for="Comment" class="form-control" rows="3"></textarea>
         </div>
         
         <button type="submit" class="btn btn-primary">Submit</button>
