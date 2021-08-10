@@ -17,6 +17,7 @@ namespace DojoSurvey.Models
         [Display(Name = "Favorite Language:")]
         public string Language {get;set;}
 
+        [MaxLength(20, ErrorMessage = "must be 20 characters or fewer.")]
         [Display(Name = "Comment (optional):")]
         public string Comment {get;set;}
     }
