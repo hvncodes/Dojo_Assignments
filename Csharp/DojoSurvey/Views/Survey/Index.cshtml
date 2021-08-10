@@ -1,3 +1,4 @@
+@model string
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,7 +11,7 @@
 </head>
 <body>
     <div class="container mt-5 mx-auto">
-        <h2 class="text-center">The current time and date:</h2>
+        <h2 class="text-center">@Model</h2>
         <div id="datetime" class="container m-auto py-3 px-5">
             <p id="date" class="mb-3">@ViewBag.dt.ToString("MMM d, yyyy")</p>
             <p id="time">@ViewBag.dt.ToString("h:mm tt")</p>
