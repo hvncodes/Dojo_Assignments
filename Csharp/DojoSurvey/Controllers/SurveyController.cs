@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 using System.Globalization;
 using DojoSurvey.Models;
 using System.Collections.Generic;
+using Microsoft.AspNetCore.Http; // to use Session
 
 namespace DojoSurvey
 {
