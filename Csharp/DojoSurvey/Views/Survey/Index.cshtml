@@ -10,13 +10,10 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
 </head>
 <body>
-    <div class="container mt-5 mx-auto">
-        <h2 class="text-center">The current time and date:</h2>
-        <div id="datetime" class="container m-auto py-3 px-5">
-            <p id="date" class="mb-3">@ViewBag.dt.ToString("MMM d, yyyy")</p>
-            <p id="time">@ViewBag.dt.ToString("h:mm tt")</p>
-        </div>
-    </div>
+
+    <partial name="NavPartial" view-data="ViewData"/>
+    <h1>Welcome to this site!</h1>
+    <p>The rest of your View content here...</p>
 
     <form asp-action="Submission" asp-controller="Survey" method="POST" class="w-25 mt-5 mx-auto p-4 border rounded-3 shadow">
 
