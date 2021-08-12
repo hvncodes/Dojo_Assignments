@@ -6,3 +6,11 @@
     <h1 class="display-4">Welcome</h1>
     <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
 </div>
+
+<div class="text-center">
+    <h2>Random passcode (passcode #@Context.Session.GetInt32("Count"))</h2>
+    <div class="my-4">
+        <span class="display-3 d-inline px-3 py-1 border rounded">@Context.Session.GetString("Passcode")</span>
+    </div>
+    <a class="btn btn-lg btn-outline-success" asp-controller="Home" asp-action="Generate">Generate</a>
+</div>
