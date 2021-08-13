@@ -13,10 +13,10 @@ namespace CRUDelicious.Controllers
     {
         private readonly ILogger<HomeController> _logger;
 
-        public HomeController(ILogger<HomeController> logger)
-        {
-            _logger = logger;
-        }
+        // public HomeController(ILogger<HomeController> logger)
+        // {
+        //     _logger = logger;
+        // }
 
         private MyContext _context;
 
@@ -29,9 +29,8 @@ namespace CRUDelicious.Controllers
         [HttpGet("")]
         public IActionResult Index()
         {
-            List<Monster> AllMonsters = _context.Monsters.ToList();
-            
-            return View();
+            List<Dish> AllDishes = _context.Dishes.ToList();
+            return View("Index", AllDishes);
         }
 
         public IActionResult Privacy()
