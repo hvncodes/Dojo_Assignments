@@ -6,11 +6,16 @@
     <h1 class="display-4">Welcome to CRUDelicious</h1>
     <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
 </div>
-<p>Check out some recent dishes!</p>
-<hr>
-<div class="text-center">
-    @foreach (var dish in Model)
-    {
-        <p><a href="/@dish.DishId">@dish.Name</a> by @dish.Chef</p>
-    }
+<div class="d-flex">
+    <div class="col-8">
+        <p>Check out some recent dishes!</p>
+        <hr>
+        @foreach (var dish in Model)
+        {
+            <p><a href="/@dish.DishId">@dish.Name</a> by @dish.Chef</p>
+        }
+    </div>
+    <div class="col-4">
+        <a href="/new">Add a Dish</a>
+    </div>
 </div>
