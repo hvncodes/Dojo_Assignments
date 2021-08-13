@@ -33,6 +33,14 @@ namespace CRUDelicious.Controllers
             return View("Index", AllDishes);
         }
 
+        [HttpGet("/{dishId}")]
+        public IActionResult OneDish(int dishId)
+        {
+            Dish OneDish = _context.Dishes.SingleOrDefault(d => d.DishId == dishId);;
+            return View("OneDish", OneDish);
+        }
+
+
         public IActionResult Privacy()
         {
             return View();
