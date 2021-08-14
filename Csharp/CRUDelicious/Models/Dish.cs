@@ -23,7 +23,7 @@ namespace CRUDelicious.Models
         public int? Tastiness { get; set; }
 
         [Required(ErrorMessage = "is required.")]
-        [Range(0, int.MaxValue, ErrorMessage = "must be at least 0 calories.")]
+        [Range(0, Int32.MaxValue, ErrorMessage = "must be at least 0 calories.")]
         [Display(Name = "# of Calories")]
         public int? Calories { get; set; }
 
