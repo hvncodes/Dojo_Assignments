@@ -86,6 +86,16 @@ namespace CRUDelicious.Controllers
             return RedirectToAction("Edit", dishId);
         }
 
+        [HttpGet("dishes/{dishId}/delete")]
+        public IActionResult Delete(int dishId)
+        {
+            Dish RetrievedDish = _context.Dishes
+                .FirstOrDefault(d => d.DishId == dishId);
+            _context.Remove(RetrievedDish);
+            _context.SaveChanges();
+            return RedirectToAction("Index");
+        }
+
         public IActionResult Privacy()
         {
             return View();
