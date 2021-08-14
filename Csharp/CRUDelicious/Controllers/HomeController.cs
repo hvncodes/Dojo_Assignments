@@ -12,13 +12,6 @@ namespace CRUDelicious.Controllers
 {
     public class HomeController : Controller
     {
-        // private readonly ILogger<HomeController> _logger;
-
-        // public HomeController(ILogger<HomeController> logger)
-        // {
-        //     _logger = logger;
-        // }
-
         private MyContext _context;
 
         // here we can "inject" our context service into the constructor
@@ -74,11 +67,22 @@ namespace CRUDelicious.Controllers
         }
 
         [HttpPost("dishes/{dishId}/update")]
-        public IActionResult update(int dishId)
+        public IActionResult Update(int dishId, Dish upDish)
         {
-            // take something in as params
-            // do stuff
-            // db save
+            // Take stuff from params
+            // Query for a single Dish from our MyContext object to track changes
+            Dish RetrievedDish = _context.Dishes
+                .FirstOrDefault(d => d.DishId == dishId);
+            // Then we may modify properties of this tracked model object
+            RetrievedDish.Name = upDish.Name;
+            RetrievedDish.Chef = upDish.Chef;
+            RetrievedDish.Calories = (int)upDish.Calories;
+            RetrievedDish.Tastiness = (int)upDish.Tastiness;
+            RetrievedDish.Description = upDish.Description;
+            RetrievedDish.UpdatedAt = DateTime.Now;
+    
+            // Finally, .SaveChanges() will update the DB with these new values
+            _context.SaveChanges();
             return RedirectToAction("Edit", dishId);
         }
 
