@@ -4,6 +4,7 @@
 @model List<Dish>
 <div class="text-center">
     <h1 class="display-4">Welcome to CRUDelicious</h1>
+    @* @Context.Session.GetInt32("userID") *@
 </div>
 <div class="d-flex">
     <div class="col-8">
@@ -11,11 +12,11 @@
         <hr>
         @foreach (var dish in Model)
         {
-            <p><a href="/@dish.DishId">@dish.Name</a> by @dish.Chef</p>
+            <p><a href="/dishes/@dish.DishId">@dish.Name</a> by @dish.Chef</p>
         }
     </div>
     <div class="col-4">
-        <a href="/new">Add a Dish</a>
+        <a href="/dishes/new">Add a Dish</a>
     </div>
 </div>
 
