@@ -83,7 +83,7 @@ namespace CRUDelicious.Controllers
     
             // Finally, .SaveChanges() will update the DB with these new values
             _context.SaveChanges();
-            return RedirectToAction("Edit", dishId);
+            return RedirectToAction("Index");
         }
 
         [HttpGet("dishes/{dishId}/delete")]
