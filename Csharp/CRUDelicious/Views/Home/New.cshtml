@@ -9,50 +9,50 @@
     <h1>Add a new Dish!</h1>
 </div>
 <hr>
-<form asp-controller="Home" asp-action="Create" method="POST" class="">
-    @* 
-    NAME
-    DISH
-    CALORIES
+<form asp-controller="Home" asp-action="Create" method="POST" class="d-flex align-items-start">
+    
+    <div class="col-4">
+        <div class="mb-3">
+            <label asp-for="Chef" class="form-label"></label>
+            <span asp-validation-for="Chef" class="text-danger"></span>
+            <input asp-for="Chef" class="form-control">
+        </div>
 
-    Tastiness select
+        <div class="mb-3">
+            <label asp-for="Name" class="form-label"></label>
+            <span asp-validation-for="Name" class="text-danger"></span>
+            <input asp-for="Name" class="form-control">
+        </div>
 
-    DESC *@
-    <div class="mb-3">
-        <label asp-for="Chef" class="form-label"></label>
-        <span asp-validation-for="Chef" class="text-danger"></span>
-        <input asp-for="Chef" class="form-control">
+        <div class="mb-3">
+            <label asp-for="Calories" class="form-label"></label>
+            <span asp-validation-for="Calories" class="text-danger"></span>
+            <input asp-for="Calories" class="form-control">
+        </div>
     </div>
 
-    <div class="mb-3">
-        <label asp-for="Name" class="form-label"></label>
-        <span asp-validation-for="Name" class="text-danger"></span>
-        <input asp-for="Name" class="form-control">
+    <div class="col-4">
+        <div class="w-25 mx-auto">
+            <label asp-for="Tastiness" class="form-label"></label>
+            <span asp-validation-for="Tastiness" class="text-danger"></span>
+            <select asp-for="Tastiness" class="form-control">
+                <option value="">-</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+        </div>
     </div>
 
-    <div class="mb-3">
-        <label asp-for="Calories" class="form-label"></label>
-        <span asp-validation-for="Calories" class="text-danger"></span>
-        <input asp-for="Calories" class="form-control">
+    <div class="col-4">
+        <div class="mb-3">
+            <label asp-for="Description" class="form-label"></label>
+            <span asp-validation-for="Description" class="text-danger"></span>
+            <textarea asp-for="Description" class="form-control" rows="3"></textarea>
+        </div>
+        <button class="btn btn-lg btn-success">Add Dish</button>
     </div>
-
-    <div class="mb-3">
-        <label asp-for="Tastiness" class="form-label"></label>
-        <span asp-validation-for="Tastiness" class="text-danger"></span>
-        <select asp-for="Tastiness" class="form-control">
-            <option value="">-</option>
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5</option>
-        </select>
-    </div>
-
-    <div class="mb-3">
-        <label asp-for="Description" class="form-label"></label>
-        <span asp-validation-for="Description" class="text-danger"></span>
-        <textarea asp-for="Description" class="form-control" rows="3"></textarea>
-    </div>
-    <button class="btn btn-lg btn-success">Add Dish</button>
+    
 </form>
