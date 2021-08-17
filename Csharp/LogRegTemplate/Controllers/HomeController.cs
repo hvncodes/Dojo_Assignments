@@ -11,13 +11,13 @@ namespace LogRegTemplate.Controllers
 {
     public class HomeController : Controller
     {
-        private readonly ILogger<HomeController> _logger;
-
-        public HomeController(ILogger<HomeController> logger)
+        private LogRegTemplateContext db;
+        public HomeController(LogRegTemplateContext context)
         {
-            _logger = logger;
+            db = context;
         }
-
+        
+        [HttpGet("")]
         public IActionResult Index()
         {
             return View();
