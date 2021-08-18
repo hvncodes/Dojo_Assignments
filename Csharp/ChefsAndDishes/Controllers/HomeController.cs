@@ -11,13 +11,13 @@ namespace ChefsAndDishes.Controllers
 {
     public class HomeController : Controller
     {
-        private readonly ILogger<HomeController> _logger;
-
-        public HomeController(ILogger<HomeController> logger)
+        private ChefsAndDishesContext db;
+        public HomeController(ChefsAndDishesContext context)
         {
-            _logger = logger;
+            db = context;
         }
 
+        [HttpGet("")]
         public IActionResult Index()
         {
             return View();
