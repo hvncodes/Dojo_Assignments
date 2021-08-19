@@ -1,8 +1,36 @@
-﻿@{
+﻿@model List<Chef>
+@{
     ViewData["Title"] = "Home Page";
 }
-
+<p>Chefs | <a href="/dish">Dishes</a></p>
+<div>
+    <a href="/new">Add a Chef</a>
+</div>
+<h1 class="display-4">Check out our roster of Chefs!</h1>
+<hr>
 <div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    <table class="table table-striped">
+        <thead class="thead-light">
+            <tr>
+                <th scope="col">Name</th>
+                <th scope="col">Age</th>
+                <th scope="col"># of Dishes</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var chef in Model)
+            {
+                <tr>
+                    <td scope="row">@chef.FullName()</td>
+                    <td>@(ViewBag.dt.Year - chef.DateOfBirth.Year)</td>
+                    <td>@chef.Dishes.Count</td>
+                </tr>
+            }
+            <tr>
+                <td scope="row"></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </tbody>
+    </table>
 </div>
