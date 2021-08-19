@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using ChefsAndDishes.Models;
-using Microsoft.AspNetCore.Http;
+// using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 
@@ -26,6 +26,8 @@ namespace ChefsAndDishes.Controllers
             List<Chef> Chefs = db.Chefs
             .Include(chef => chef.Dishes)
             .ToList();
+            DateTime dt = DateTime.Now;
+            ViewBag.dt = dt;
             return View("Index", Chefs);
         }
 
@@ -35,7 +37,7 @@ namespace ChefsAndDishes.Controllers
             return View("New");
         }
 
-        [HttpPost("/new/process")]
+        [HttpPost("/new")]
         public IActionResult Create(Chef newChef)
         {
             if (ModelState.IsValid == false)
@@ -56,6 +58,41 @@ namespace ChefsAndDishes.Controllers
             db.SaveChanges();
             return RedirectToAction("Index");
         }
+
+        [HttpGet("/dish")]
+        public IActionResult Dish()
+        {
+            List<Dish> AllDishes = db.Dishes
+            .Include(d => d.Author)
+            .ToList();
+            return View("Dishes", AllDishes);
+        }
+
+        [HttpGet("/dish/new")]
+        public IActionResult NewDish()
+        {
+            List<Chef> AllChefs = db.Chefs
+            .ToList();
+            ViewBag.AllChefs = AllChefs;
+            return View("NewDish");
+        }
+
+        [HttpPost("/dish/new/")]
+        public IActionResult CreateDish(Dish newDish)
+        {
+            if (ModelState.IsValid == false)
+            {
+                List<Chef> AllChefs = db.Chefs
+                .ToList();
+                ViewBag.AllChefs = AllChefs;
+                return View("NewDish");
+            }
+            
+            db.Add(newDish);
+            db.SaveChanges();
+            return RedirectToAction("Dish");
+        }
+
         public IActionResult Privacy()
         {
             return View();
