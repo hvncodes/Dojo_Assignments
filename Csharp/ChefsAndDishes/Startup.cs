@@ -32,7 +32,7 @@ namespace ChefsAndDishes
             // @using Microsoft.AspNetCore.Http in Views/_ViewImports.cshtml
             // Example: <p>@Context.Session.GetString("UserId")</p>
             services.AddHttpContextAccessor();
-            services.AddSession();
+            // services.AddSession();
             services.AddMvc(options => options.EnableEndpointRouting = false);
         }
 
@@ -50,7 +50,7 @@ namespace ChefsAndDishes
 
             // css, js, and image files can now be added to wwwroot folder
             app.UseStaticFiles();
-            app.UseSession();
+            // app.UseSession();
             app.UseMvc(routes =>
             {
                 routes.MapRoute(
