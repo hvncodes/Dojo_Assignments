@@ -11,9 +11,6 @@ namespace ChefsAndDishes.Models
         public string Name { get; set; }
 
         [Required(ErrorMessage = "is required.")]
-        public string Chef { get; set; }
-
-        [Required(ErrorMessage = "is required.")]
         [Range(1, 5, ErrorMessage = "must be at between 1 and 5.")]
         public int? Tastiness { get; set; }
 
