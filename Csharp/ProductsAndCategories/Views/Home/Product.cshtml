@@ -1,0 +1,38 @@
+@model CategoryProduct
+@{
+    ViewData["Title"] = "Products";
+}
+<h1>@ViewBag.ProductWithCategories.Name</a></h1>
+<hr>
+<div class="d-flex">
+
+    <div class="col-6">
+        <h2 class="text-center">Categories</h2>
+        @* FOREACH CATEGORY IN PRODUCT, PRINT LI IN UL *@
+        <ul>
+            @foreach (var item in ViewBag.ProductWithCategories.CategoryProducts)
+            {
+                <li>@item.Category.Name</li>
+            }
+        </ul>
+    </div>
+
+    <div class="col-6">
+        <form asp-controller="Home" asp-action="UpdateCategoryProduct" method="POST">
+
+            <div class="mb-3">
+                <label asp-for="CategoryId" class="form-label">Add Category</label>
+                <select asp-for="CategoryId" class="form-control">
+                @foreach (var category in ViewBag.FreeCategories)
+                {
+                    <option value="@category.CategoryId">@category.Name</option>
+                }
+                </select>
+            </div>
+
+            <button class="btn btn-outline-primary">Add</button>
+            
+        </form>
+    </div>
+
+</div>
