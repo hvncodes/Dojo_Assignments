@@ -1,0 +1,12 @@
+@model Wedding
+@{
+    ViewData["Title"] = Model.WedderOne+" & "+Model.WedderTwo+"'s Wedding";
+    DateTime dateNotNulled = (DateTime)Model.WeddingDate;
+}
+<h1>@Model.WedderOne & @Model.WedderTwo's Wedding</h1>
+<h2>Date: @dateNotNulled.ToString("MMMM dd, yyyy"))</h2>
+<h2>Guests:</h2>
+@foreach (var item in @Model.UserWeddings)
+{
+    <p>@item.User.FirstName @item.User.LastName</p>
+}

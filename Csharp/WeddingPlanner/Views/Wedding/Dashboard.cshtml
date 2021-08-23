@@ -1,0 +1,59 @@
+@{
+    ViewData["Title"] = "Dashboard";
+}
+<h1>Welcome, @Context.Session.GetString("FirstName") (@Context.Session.GetInt32("UserId")).</h1>
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">Wedding</th>
+            <th scope="col">Date</th>
+            <th scope="col">Guest</th>
+            <th scope="col">Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (Wedding wed in @ViewBag.AllWeddings)
+        {
+            bool alreadyRsvp = wed.UserWeddings.Any(uw => Context.Session.GetInt32("UserId") == uw.UserId);
+            DateTime dateNotNulled = (DateTime)wed.WeddingDate;
+            <tr>
+            <th scope="row"><a href="/wedding/@wed.WeddingId">@wed.WedderOne & @wed.WedderTwo</a></th>
+            <td>@dateNotNulled.ToString("MMMM dd, yyyy")</td>
+            <td>@wed.UserWeddings.Count</td>
+            <td>
+            @if (Context.Session.GetInt32("UserId") == wed.UserId)
+            {
+                <form asp-controller="Wedding" asp-action="DeleteWedding" asp-route-weddingId="@wed.WeddingId">
+                    <button class="btn btn-link">
+                        <span>Delete</span>
+                    </button>
+                </form>
+            }
+            else
+            {
+                <form asp-controller="Wedding" asp-action="RsvpWedding" asp-route-weddingId="@wed.WeddingId">
+                    <button class="btn btn-link">
+                    @if (alreadyRsvp)
+                    {
+                        <span>Un-RSVP</span>
+                    }
+                    else
+                    {
+                        <span>RSVP</span>
+                    }
+                    </button>
+                </form>
+            }
+            </td>
+        </tr>
+        }
+
+        <tr>
+            <th scope="row"></th>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </tbody>
+</table>
+<a href="/wedding/new" class="btn btn-outline-primary">New Wedding</a>
