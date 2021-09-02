@@ -3,7 +3,7 @@ import classes from './PersonCard.module.css';
 
 class PersonCard extends Component {
     render() {
-        const { firstName, lastName, age, hairColor } = this.props;
+        const { firstName, lastName, age, hairColor } = this.props.person;
         return (
             <div className={classes.card}>
                 <div className={classes.content}>
