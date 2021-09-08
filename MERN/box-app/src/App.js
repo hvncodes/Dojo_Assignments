@@ -7,17 +7,16 @@ function App() {
   const [currentOutput, setCurrentOutput] = useState([]);
     
   const updateOutput = ( newBox ) => {
-    // setCurrentOutput( newBox, ...currentOutput );
-    setCurrentOutput( newBox, ...currentOutput );
+    setCurrentOutput( [...currentOutput, newBox] );
   }
 
   return (
     <div className="App">
       <BoxForm box={ updateOutput } />
 
-      {currentOutput.map((b) => {
+      {currentOutput.map((b, i) => {
         return (
-          <BoxDisplay box={b} />
+          <BoxDisplay id={i} box={b} />
         );
       })}
     </div>
