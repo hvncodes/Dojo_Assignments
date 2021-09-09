@@ -10,8 +10,9 @@ function App() {
     const initialValue = JSON.parse(saved);
     return initialValue || [];
   });
+
   useEffect(() => {
-    // storing input name
+    // storing input toDoList
     localStorage.setItem("toDoList", JSON.stringify(toDoList));
   }, [toDoList]);
   const submitNewTodo = (e) => {
@@ -34,12 +35,14 @@ function App() {
     console.log(newToDo);
     setNewTodo(e.target.value);
   }
+
   const deleteToDo = (delIdx) => {
     let filteredList = toDoList.filter((item, i) => {
       return i !== delIdx;
     });
     setToDoList(filteredList);
   }
+
   const checkboxToDo = (idx) => {
     const updatedToDoList = toDoList.map(
       (item, i) => {
@@ -52,6 +55,7 @@ function App() {
     );
     setToDoList(updatedToDoList);
   }
+  
   return (
     <div className="App">
       <form onSubmit={ submitNewTodo }>
