@@ -1,10 +1,19 @@
 import './App.css';
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 function App() {
   const [newToDo, setNewTodo] = useState("");
   const [toDoError, setToDoError] = useState("");
-  const [toDoList, setToDoList] = useState([]);
+  const [toDoList, setToDoList] = useState(() => {
+    // getting stored value
+    const saved = localStorage.getItem("toDoList");
+    const initialValue = JSON.parse(saved);
+    return initialValue || [];
+  });
+  useEffect(() => {
+    // storing input name
+    localStorage.setItem("toDoList", JSON.stringify(toDoList));
+  }, [toDoList]);
   const submitNewTodo = (e) => {
     e.preventDefault();
     if(newToDo.length < 1) {
