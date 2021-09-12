@@ -10,7 +10,11 @@ const PokemonList = (props) => {
                 console.log(response.data);
                 setPokemons(response.data.results);
             })
+            .catch((error) => {
+                console.log(error);
+            });
     }, []);
+
     function formatPokeName(str) {
         let words = str.split('-');
         for (var i = 0; i < words.length; i++) {
@@ -18,17 +22,16 @@ const PokemonList = (props) => {
         }
         return words.join(' ');
     }
+
     return (
         <div>
             {pokemons ? 
                 <ul>
-                    {
-                        pokemons.length > 0 && pokemons.map((mon, index)=>{
-                            return (
-                                <li key={index}>{formatPokeName(mon.name)}</li>
-                            );
-                        })
-                    }
+                    {pokemons.length > 0 && pokemons.map((mon, index)=>{
+                        return (
+                            <li key={index}>{formatPokeName(mon.name)}</li>
+                        );
+                    })}
                 </ul>
                 :
                 'fetching...'

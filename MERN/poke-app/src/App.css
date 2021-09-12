@@ -1,5 +1,7 @@
 .App ul {
   list-style-position: inside;
+  margin: 0 auto;
+  padding: 0;
 }
 .App {
   text-align: center;
