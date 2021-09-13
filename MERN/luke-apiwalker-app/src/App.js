@@ -7,30 +7,33 @@ import {
   Link 
 } from "react-router-dom";
 import Home from './components/Home';
-import Word from './components/Word';
+import People from './components/People';
+import Planets from './components/Planets';
+import Form from './components/Form';
 
 function App() {
   return (
     <BrowserRouter>
 
-      <h1>Routing Example</h1>
       <p>
         <Link to="/">Home</Link>
         &nbsp;|&nbsp;
-        <Link to="/banana">Banana</Link>
+        <Link to="/people/1">Peoples ID: 1</Link>
         &nbsp;|&nbsp;
-        <Link to="/42">42</Link>
-        &nbsp;|&nbsp;
-        <Link to="/watermelon/black/pink">Watermelon</Link>
+        <Link to="/planets/5">Planets ID: 5</Link>
       </p>
 
+      <hr />
+
+      <Form />
+
       <Switch>
-        <Route path="/:word/:textColor/:bgColor">
-          <Word />
+        <Route exact path="/people/:id">
+          <People />
         </Route>
-        
-        <Route path="/:word">
-          <Word />
+
+        <Route exact path="/planets/:id">
+          <Planets />
         </Route>
 
         <Route exact path="/">
