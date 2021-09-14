@@ -18,6 +18,7 @@ const People = (props) => {
                 console.log(error);
                 setError(
                 // <img src="https://c.tenor.com/8ApsefKQh2gAAAAC/starwars-droids.gif" alt="obiwan kenobi jedi mind tricks gif" />
+                // <iframe src="https://c.tenor.com/8ApsefKQh2gAAAAC/starwars-droids.gif" width="600" height="400" frameborder="0"></iframe>
                 <p>These aren't the droids you're looking for.</p>
                 );
             });
