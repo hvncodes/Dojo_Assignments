@@ -4,7 +4,7 @@ const app = express();
 // This will fire our mongoose.connect statement to initialize our database connection
 require("./server/config/mongoose.config");
 
-app.use(express.json(), express.urlencoded({ extended: true }));
+app.use(express.json());
 
 // This is where we import the users routes function from our user.routes.js file
 const AllMyUserRoutes = require("./server/routes/student.routes");
