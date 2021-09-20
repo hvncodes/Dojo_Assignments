@@ -26,7 +26,7 @@ module.exports = {
   },
 
   updateProduct(req, res) {
-    Product.findIdAndUpdate(req.params.id, req.body, {
+    Product.findByIdAndUpdate(req.params.id, req.body, {
       runValidators: true, // Run model validations again.
       new: true, // return newly updated document.
     })

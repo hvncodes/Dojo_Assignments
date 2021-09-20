@@ -4,7 +4,7 @@ import "./App.css";
 import Main from "./views/Main";
 import Products from "./views/Products";
 import Product from "./views/Product";
-
+import Update from "./views/Update";
 function App() {
   return (
     <div className="App">
@@ -21,6 +21,10 @@ function App() {
 
         <Route exact path="/products/:id">
           <Product />
+        </Route>
+
+        <Route path="/products/:id/:edit">
+          <Update />
         </Route>
       </Switch>
     </div>
